@@ -1,0 +1,199 @@
+/* Reset default styles and box model */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Set the height of the body to full viewport height */
+body {
+  height: 100vh;
+}
+
+/* Styling for paragraphs */
+p {
+  font-size: 1.2rem;
+  color: #fff;
+}
+
+/* Styling for the reset button */
+#reset {
+  cursor: pointer;
+  border: 1px solid #fff;
+  border-radius: 5px;
+  padding: 3px 2px;
+}
+
+/* Hover effect for the reset button */
+#reset:hover {
+  background: #fff;
+  color: #000;
+}
+
+/* Container for the game and text sides */
+.con-sider {
+  height: 100vh;
+  width: 100vw;
+  position: relative;
+  overflow: hidden;
+}
+
+/* Styling for the text side */
+.text-side {
+  width: 35%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  transition: transform 0.5s linear;
+}
+
+.text-side > div {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  color: #fff;
+}
+
+.text-side h2 {
+  font-size: 2.3rem;
+  margin: 10px;
+  margin-top: -30px;
+}
+
+.text-side-1 {
+  background: #2a86ba;
+}
+
+.text-side-2 {
+  background: #ffb866;
+}
+
+.text-side-3 {
+  background: #252e33;
+}
+
+/* Styling for the game side */
+.game-side {
+  width: 65%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 35%;
+  transition: transform 0.5s linear;
+  text-align: center;
+}
+
+.game-side > .game_div {
+  width: 100%;
+  height: 100%;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center, center;
+}
+
+/* Styling for the arrow buttons */
+.arrow-buttons {
+  position: absolute;
+  z-index: 10;
+  left: 35%;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.arrow {
+  width: 50px;
+  height: 50px;
+  overflow: hidden;
+}
+
+.arrow img {
+  width: 100%;
+  height: 100%;
+}
+
+/* Hover effect for the arrow images */
+.arrow img:hover {
+  border: 3px solid #252e33;
+}
+
+.up {
+  border-top-right-radius: 8px;
+  border-bottom-right-radius: 8px;
+}
+
+.down {
+  border-top-left-radius: 8px;
+  border-bottom-left-radius: 8px;
+  margin-left: -50px;
+}
+
+/* Styling for the game canvases */
+canvas {
+  width: 34vw;
+  height: 94vh;
+  margin-top: 2%;
+}
+
+#doodle-board {
+  background-image: url("./img/doodlejumpbg.png");
+}
+
+#flappy-board {
+  background-image: url("./img/flappybirdbg.png");
+}
+
+/* Styling for the Tic Tac Toe board */
+#tic-tac-toe-board {
+  width: 90%;
+  height: 80%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: gray;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  max-width: 850px; /* Maximum width for the board */
+  margin: auto; /* Added margin for screens smaller than 750px */
+}
+
+/* Styling for individual tiles in the Tic Tac Toe board */
+.tile {
+  width: calc(100% / 3);
+  height: calc(100% / 3);
+  font-size: 150px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Styling for the winning tiles in Tic Tac Toe */
+.winner {
+  background-color: lightgray;
+  color: red;
+}
+
+/* Styling for the horizontal lines in Tic Tac Toe */
+.horizontal-line {
+  border-bottom: 3px solid black;
+}
+
+/* Styling for the vertical lines in Tic Tac Toe */
+.vertical-line {
+  border-right: 3px solid black;
+}
+
+/* Media query for smaller screens */
+@media (min-width: 750px) {
+  #tic-tac-toe-board {
+    width: 70%; /* Set the board to occupy 70% of the screen width */
+    height: 70vh; /* Set the board to occupy 70% of the screen height */
+  }
+}

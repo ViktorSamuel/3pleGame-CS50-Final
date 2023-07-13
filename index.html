@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="style.css">
+    <title>3ple Game</title>
+</head>
+<body>
+    
+    <div class="con-sider">
+        <div class="text-side">
+            <div class="text-side-1">
+                <h2>Flappy bird</h2>
+                <p>Fly or die</p>
+            </div>
+            <div class="text-side-2" >
+                <h2>Doodle jump</h2>
+                <p>How high can you go?</p>
+            </div>
+            <div class="text-side-3">
+                <h2>Tic tac toe</h2>
+                <p id="reset" onclick="t_resetGame()">Reset game</p>
+            </div>
+        </div>
+
+        <div class="game-side">
+            <!-- Tic Tac Toe Game -->
+            <div class="game_div">
+                <aside id="tic-tac-toe-board"></aside>
+            </div>
+            <!-- Doodle Jump Game -->
+            <div class="game_div">
+                <canvas id="doodle-board"></canvas>
+            </div>
+            <!-- Flappy Bird Game -->
+            <div class="game_div">
+                <canvas id="flappy-board"></canvas>
+            </div>
+        </div>
+
+        <div class="arrow-buttons">
+            <div class="arrow up">
+                <img src="img/arrow-up.png" alt="arrow up">
+            </div>
+            <div class="arrow down">
+                <img src="img/arrow-down.png" alt="arrow down">
+            </div>
+        </div>
+    </div>
+    
+    <!-- JavaScript files for the respective games -->
+    <script src="./js/tictactoe.js"></script>
+    <script src="./js/flappybird.js"></script>
+    <script src="./js/doodlejump.js"></script>
+    <script src="./js/script.js"></script>
+</body>
+</html>
