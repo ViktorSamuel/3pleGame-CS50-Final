@@ -1,6 +1,6 @@
 # 3pleGame-CS50-Final
 
-This is the first version of the project, which includes a functioning codebase for a web application. The project consists of HTML, CSS, and JavaScript files. 
+Project, which includes a functioning codebase for a web application. The project consists of HTML, CSS, and JavaScript files. 
 
 #### It contains the following files and directories:
 - `index.html`: The main HTML file for the application.
@@ -25,4 +25,4 @@ To use this repository, follow these steps:
 
 ## Website
 
-For more information and to access the live version of the project, please visit [example.com](https://www.example.com).
+For more interactive experience and to access the live version of the project, please visit [example.com](https://www.example.com).
