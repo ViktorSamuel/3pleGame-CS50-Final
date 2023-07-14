@@ -25,4 +25,4 @@ To use this repository, follow these steps:
 
 ## Website
 
-For more interactive experience and to access the live version of the project, visit [OpenAI](https://openai.com).
+For more interactive experience and to access the live version of the project, visit [link](https://openai.com).
