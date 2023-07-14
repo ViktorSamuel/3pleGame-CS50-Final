@@ -11,7 +11,7 @@ Project, which includes a functioning codebase for a web application. The projec
 - `./js/tictactoe.js`: JavaScript code for the Tic Tac Toe game.
 - `./js/script.js`: JavaScript code responsible for sliding functionality.
 
-Please note that this is the initial version of the project, and the code may not be well-designed or as efficient as is possible. However, future improvements are planned 
+Note that this is the initial version of the project, and future improvements are planned 
 to enhance the code structure, efficiency, clarity, and commenting. The project will undergo further iterations to ensure better maintainability.
 
 ## Usage
