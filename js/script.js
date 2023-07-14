@@ -8,12 +8,11 @@ const slideLength = gameSlide.querySelectorAll("div").length;
 const currenrGame = document.querySelector("#current_game");
 
 let activeSlide = 0;
-let doodleGameStarted = false;
-let flappyGameStarted = false;
-let ticTacToeGameStarted = true;
 
-// Set initial game
+// initialize games
 t_setGame();
+doodle_start();
+f_flappy_start();
 
 // Set text side position
 textSide.style.top = `-${(slideLength - 1) * 100}vh`;
@@ -44,28 +43,6 @@ function changeSlide(direction) {
     if (activeSlide < 0) {
       activeSlide = slideLength - 1;
     }
-  }
-
-  // Start the respective game based on the active slide
-  switch (activeSlide) {
-    case 0:
-      if (!ticTacToeGameStarted) {
-        t_setGame();
-        ticTacToeGameStarted = true;
-      }
-      break;
-    case 1:
-      if (!doodleGameStarted) {
-        doodle_start();
-        doodleGameStarted = true;
-      }
-      break;
-    case 2:
-      if (!flappyGameStarted) {
-        f_flappy_start();
-        flappyGameStarted = true;
-      }
-      break;
   }
 
   // Slide transition

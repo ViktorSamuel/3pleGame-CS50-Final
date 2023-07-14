@@ -45,17 +45,17 @@ function doodle_start() {
 
   // Load images
   doodlerRightImg = new Image();
-  doodlerRightImg.src = "../img/doodler-right.png";
+  doodlerRightImg.src = "./img/doodler-right.png";
   doodler.img = doodlerRightImg;
   doodlerRightImg.onload = function () {
     context.drawImage(doodler.img, doodler.x, doodler.y, doodler.width, doodler.height);
   };
 
   doodlerLeftImg = new Image();
-  doodlerLeftImg.src = "../img/doodler-left.png";
+  doodlerLeftImg.src = "./img/doodler-left.png";
 
   platformImg = new Image();
-  platformImg.src = "../img/platform.png";
+  platformImg.src = "./img/platform.png";
 
   // Set initial velocity and score
   velocityY = initialVelocityY;
