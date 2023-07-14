@@ -28,5 +28,5 @@ To use this repository, follow these steps:
 For more interactive experience and to access the live version of the project, visit [link](https://viktorsamuel.github.io/3pleGame-CS50-Final/).
 
 ## Video: 
-[video](https://www.youtube.com/watch?v=sjtsbfeFu9Y)
+Video presentation of this project you can see [here](https://www.youtube.com/watch?v=sjtsbfeFu9Y)
 
