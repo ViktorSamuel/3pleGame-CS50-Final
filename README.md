@@ -25,4 +25,4 @@ To use this repository, follow these steps:
 
 ## Website
 
-For more interactive experience and to access the live version of the project, please visit [example.com](https://www.example.com).
+For more interactive experience and to access the live version of the project, visit [link]([https://www.example.com](https://viktorsamuel.github.io/3pleGame-CS50-Final/)https://viktorsamuel.github.io/3pleGame-CS50-Final/).
